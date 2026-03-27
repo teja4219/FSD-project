@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index-upgraded.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style-upgraded.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script-upgraded.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index-upgraded.html"
+    }
+  ]
+}
