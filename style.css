@@ -1,0 +1,27 @@
+:root { --bg: #0b1220; --card: rgba(15, 23, 42, 0.85); --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8; }
+* { box-sizing: border-box; }
+body { margin:0; min-height: 100vh; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at 20% 20%, #2b3b6f, #0a1224 40%); color: var(--text); }
+.app { padding: 1.25rem; max-width: 1080px; margin: auto; }
+.header { text-align: center; margin-bottom: 1.5rem; }
+.header h1 { font-size: 2rem; margin:0; color: #38bdf8; }
+.header p { margin: .35rem 0 0; color: var(--muted); }
+.card { background: var(--card); border: 1px solid rgba(100, 116, 139, .22); border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,.3); padding: 1rem; margin-bottom: 1rem; }
+.grid { display:grid; gap: .75rem; }
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.login-grid { max-width: 420px; margin: auto; }
+input, select, button { width: 100%; border-radius: 10px; border: 1px solid rgba(148,163,184,.3); padding: .65rem .8rem; background: rgba(15, 23, 42, 0.8); color: #fff; }
+input:focus, select:focus, button:focus { outline: 2px solid #38bdf8; outline-offset: 2px; }
+button { cursor: pointer; background: linear-gradient(130deg, #38bdf8, #0ea5e9); color:#fff; border:none; font-weight: 600; margin-top: .45rem; }
+button:hover { transform: translateY(-1px); }
+.table { width:100%; border-collapse: collapse; margin-top: 0.75rem; }
+.table th, .table td { padding: .6rem .4rem; border: 1px solid rgba(148,163,184,.2); text-align: left; font-size: 0.9rem; }
+.badge { display:inline-block; border-radius:999px; padding:.2rem .5rem; font-size:.72rem; margin-right:.3rem; }
+.badge-high { background:#fca5a5; color:#7f1d1d; } .badge-medium { background:#facc15; color:#78350f; } .badge-low { background:#86efac; color:#14532d; }
+.badge-class { background:#93c5fd; color:#1e3a8a; } .badge-exam { background:#c4b5fd; color:#4c1d95; } .badge-assignment { background:#67e8f9; color:#0f766e; } .badge-lab-work { background:#fde68a; color:#92400e; } .badge-project { background:#fcd34d; color:#78350f; } .badge-presentation { background:#fda4af; color:#881337; } .badge-study { background:#86efac; color:#166534; } .badge-administrative { background:#a5b4fc; color:#3730a3; } .badge-other { background:#cbd5e1; color:#1e293b; }
+.actions button { width:auto; margin-right: .35rem; }
+.actions button.delete { background: #ef4444; }
+.actions button.edit { background: #facc15; color: #1e293b; }
+.notification { background:#1e293b; border:1px solid #334155; color:#e2e8f0; border-radius:10px; padding:.5rem .8rem; margin-bottom:.8rem; }
+.small { font-size: 0.87rem; color: #94a3b8; text-align: center; margin: .35rem 0 0; }
+.link { color: #38bdf8; cursor:pointer; text-decoration: underline; }
+@media(max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } }
